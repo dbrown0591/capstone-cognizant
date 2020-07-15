@@ -1,0 +1,43 @@
+<mat-toolbar>
+    <a href="#" mat-button routerLink="" >
+        <span class="tic">Tic-</span>
+        <span class="tac">Tac-</span>
+        <span class="toe">Toe</span>
+      </a>
+</mat-toolbar>
+
+<div class="row" style="text-align: center;">
+    <mat-card class="howToPlay">
+        <span class="howToPlay">
+            <u>
+                <span class="tic">Str</span>
+                <span class="tac">ate</span>
+                <span class="toe">gies</span>
+                
+                
+            </u>
+        </span>
+        <mat-list>
+            <mat-list-item>        
+                <span class="howToPlayContent">Win: If the player has two in a row, they can place a third to get three in a row.</span>
+            </mat-list-item>
+            <mat-list-item>
+                <span class="howToPlayContent">Block: If the opponent has two in a row, the player must play the third themselves to block the opponent.</span>
+            </mat-list-item>
+            <mat-list-item>
+                <span class="howToPlayContent">Fork: Create an opportunity where the player has two ways to win (two non-blocked lines of 2).</span>
+            </mat-list-item>
+            <mat-list-item>
+                <span class="howToPlayContent">Blocking an opponent's fork: If there is only one possible fork for the opponent, the player should block it.</span>
+            </mat-list-item>
+        </mat-list>   
+    </mat-card>
+    
+    <button mat-stroked-button class="vsPlayer" routerLink="/result">
+        <span class="vsPlayer">Play vs Player</span>
+    </button>
+    <button mat-stroked-button class="vsComputer" routerLink="/board">
+        <span class="vsComputer">Play vs Computer</span>
+    </button>
+</div>
+

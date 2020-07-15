@@ -1,0 +1,44 @@
+<mat-toolbar>
+  <a href="#" mat-button routerLink="" >
+    <span class="tic">Tic-</span>
+    <span class="tac">Tac-</span>
+    <span class="toe">Toe</span>
+  </a>
+  
+  <span class="flexright"></span>
+  <a href="#" mat-button routerLink="">
+    <span class="login">Exit</span>
+  </a>
+  <!-- <span class="flexright"></span>
+  <a href="#" mat-button routerLink="">
+    <span class="login">Exit</span>
+  </a> -->
+  <!-- <a href="#" mat-button routerLink="">
+    <span class="signup">Sign Up</span>
+  </a> -->
+</mat-toolbar>
+ 
+
+
+<div *ngIf="isHumanTurn" class="big">Your Turn</div>
+<div class="box">
+  <mat-grid-list cols="3" rowHeight="1:1">
+    <mat-grid-tile
+      *ngFor="let tile of tiles; let i = index"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.color"
+      (click)="setMove(i)">
+      {{tile.text}}
+    </mat-grid-tile>
+  </mat-grid-list>
+</div> 
+
+
+<button class='newGame' (click)=newGame()>Reset</button>
+
+           
+<div *ngIf="isHumanWinner" class="big">You Won!!</div>
+<div *ngIf="isHumanWinner" class="big">GAME OVER</div>
+<div *ngIf="isComputerWinner" class="big">You Lose!!</div>
+<div *ngIf="isComputerWinner" class="big">GAME OVER</div>

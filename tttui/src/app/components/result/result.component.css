@@ -1,0 +1,39 @@
+
+  span.tic {
+    color:black;
+    font-family:Iceberg;
+    font-size:40px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+span.tac {
+    color:red;
+    font-family:Iceberg;
+    font-size:40px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+span.toe {
+    color:blue;
+    font-family:Iceberg;
+    font-size:40px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+span.login {
+    color: black;
+    font-family:Exo;
+    font-size:20px;
+    
+}
+
+span.signup {
+    color: black;
+    font-family:Exo;
+    font-size:20px;
+    
+}
+
+span.flexright {
+    flex: 1 1 auto;
+}

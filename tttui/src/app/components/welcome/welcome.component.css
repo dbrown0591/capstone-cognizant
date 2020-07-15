@@ -1,0 +1,74 @@
+/**** How To Play ****/
+mat-card.howToPlay {
+    border: 4px solid black;
+    margin-top: 140px;
+    margin-bottom: 30px;
+    background-color: transparent;
+}
+
+span.howToPlay {
+    font-family: Iceberg;
+    font-size: 50px;
+}
+
+span.howToPlayContent {
+    color: black;
+    font-family: Exo;
+    font-size: 18px;
+}
+
+span.tic {
+    color:black;
+    font-family:Iceberg;
+    font-size:50px;
+    
+}
+
+span.tac {
+    color:red;
+    font-family:Iceberg;
+    font-size:50px;
+   
+}
+
+span.toe {
+    color:blue;
+    font-family:Iceberg;
+    font-size:50px;
+    
+}
+
+/**** Create Game versus Computer ****/
+button.vsComputer {
+    background-color: transparent;
+    border: 5px solid blue;
+    text-align: center;
+    outline: none;
+    height: 75px;
+    margin: 10px;
+}
+
+span.vsComputer {
+    color: blue;
+    font-family: Iceberg;
+    font-size:40px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/**** Create Game versus Player ****/
+button.vsPlayer {
+    background-color: transparent;
+    border: 5px solid red;
+    text-align: center;
+    outline: none;
+    height: 75px;
+    margin: 10px;
+}
+
+span.vsPlayer {
+    color: red;
+    font-family: Iceberg;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
